@@ -133,7 +133,7 @@ def detect_edges(image, t_low, t_high=None):
     """
     Detects edges using simple gradient filters and optional hysteresis thresholding.
     - Applies custom_convolution using predefined horizontal (kernel_x) and vertical (kernel_y) Sobel-like kernels.
-    - Computes gradient magnitude: sqrt(Gx^2 + Gy^2), then normalizes it.
+    - Computes gradient magnitude: sqrt(Gx^2 + Gy^2), then normalises it.
     - If only t_low is provided: performs binary thresholding.
     - If t_low and t_high are provided:
         - Marks strong edges where magnitude >= t_high.
